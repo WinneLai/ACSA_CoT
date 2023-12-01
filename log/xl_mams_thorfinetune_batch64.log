@@ -1,0 +1,36 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.37s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.30s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.46s/it]
+/home/winnelai/anaconda3/envs/thor3/lib/python3.8/site-packages/peft/utils/other.py:136: FutureWarning: prepare_model_for_int8_training is deprecated and will be removed in a future version. Use prepare_model_for_kbit_training instead.
+  warnings.warn(
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thouroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+trainable params: 9,437,184 || all params: 2,859,194,368 || trainable%: 0.33006444422319176
+Running on the MAMS data.
+Choosing thor multi-step infer mode.
+Fine-tuning mode for training.
+  0%|          | 0/20 [00:00<?, ?it/s]
+  0%|          | 0/111 [00:00<?, ?it/s][A/home/winnelai/anaconda3/envs/thor3/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:2632: UserWarning: `max_length` is ignored when `padding`=`True` and there is no truncation strategy. To pad to max length, use `padding='max_length'`.
+  warnings.warn(
+/home/winnelai/anaconda3/envs/thor3/lib/python3.8/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/winnelai/anaconda3/envs/thor3/lib/python3.8/site-packages/torch/utils/checkpoint.py:61: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+/home/winnelai/anaconda3/envs/thor3/lib/python3.8/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+
+Epoch 0, loss:0.6946:   0%|          | 0/111 [01:05<?, ?it/s][A
+Epoch 0, loss:0.6946:   1%|          | 1/111 [01:05<2:00:56, 65.97s/it][A
+Epoch 0, loss:0.7235:   1%|          | 1/111 [01:58<2:00:56, 65.97s/it][A
+Epoch 0, loss:0.7235:   2%|▏         | 2/111 [01:58<1:46:00, 58.36s/it][A
+Epoch 0, loss:0.7741:   2%|▏         | 2/111 [02:37<1:46:00, 58.36s/it][A
+Epoch 0, loss:0.7741:   3%|▎         | 3/111 [02:37<1:28:47, 49.33s/it][A
+Epoch 0, loss:0.7299:   3%|▎         | 3/111 [03:17<1:28:47, 49.33s/it][A
+Epoch 0, loss:0.7299:   4%|▎         | 4/111 [03:17<1:21:03, 45.46s/it][A
+Epoch 0, loss:0.7222:   4%|▎         | 4/111 [03:41<1:21:03, 45.46s/it][A
+Epoch 0, loss:0.7222:   5%|▍         | 5/111 [03:41<1:06:58, 37.91s/it][A
+Epoch 0, loss:0.7021:   5%|▍         | 5/111 [04:17<1:06:58, 37.91s/it][A
+Epoch 0, loss:0.7021:   5%|▌         | 6/111 [04:17<1:04:53, 37.08s/it][A
+Epoch 0, loss:0.6910:   5%|▌         | 6/111 [05:10<1:04:53, 37.08s/it][A
+Epoch 0, loss:0.6910:   6%|▋         | 7/111 [05:10<1:13:31, 42.42s/it][A
+Epoch 0, loss:0.6808:   6%|▋         | 7/111 [06:11<1:13:31, 42.42s/it][A
+Epoch 0, loss:0.6808:   7%|▋         | 8/111 [06:11<1:23:08, 48.44s/it][A
